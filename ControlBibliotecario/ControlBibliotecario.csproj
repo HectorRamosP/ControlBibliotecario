@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC82219D-BEEF-49C3-81BB-BDAE0F6BA0AF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ControlBibliotecario</RootNamespace>
+    <AssemblyName>ControlBibliotecario</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgregarLibroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarLibro.Designer.cs">
+      <DependentUpon>AgregarLibroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarUsuarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarUsuarioForm.Designer.cs">
+      <DependentUpon>AgregarUsuarioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevolverLibroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevolverLibroForm.Designer.cs">
+      <DependentUpon>DevolverLibroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iniciarSesionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iniciarSesionForm.Designer.cs">
+      <DependentUpon>iniciarSesionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfazBibliotecaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interfazBibliotecaForm.Designer.cs">
+      <DependentUpon>interfazBibliotecaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SolicitarLibroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SolicitarLibroForm.Designer.cs">
+      <DependentUpon>SolicitarLibroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerAlumnosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerAlumnosForm.Designer.cs">
+      <DependentUpon>VerAlumnosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerLibrosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerLibrosForm.Designer.cs">
+      <DependentUpon>VerLibrosForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AgregarLibroForm.resx">
+      <DependentUpon>AgregarLibroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarUsuarioForm.resx">
+      <DependentUpon>AgregarUsuarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevolverLibroForm.resx">
+      <DependentUpon>DevolverLibroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iniciarSesionForm.resx">
+      <DependentUpon>iniciarSesionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfazBibliotecaForm.resx">
+      <DependentUpon>interfazBibliotecaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SolicitarLibroForm.resx">
+      <DependentUpon>SolicitarLibroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerAlumnosForm.resx">
+      <DependentUpon>VerAlumnosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerLibrosForm.resx">
+      <DependentUpon>VerLibrosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil-del-usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libro%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar-usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busqueda-de-trabajo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pedir-prestado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salida-de-emergencia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1507842217343-583bb7270b66.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\educacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\devolver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil-del-usuario1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
